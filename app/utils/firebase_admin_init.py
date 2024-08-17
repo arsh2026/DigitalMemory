@@ -2,7 +2,7 @@ import firebase_admin
 from firebase_admin import credentials, auth
 
 # Path to your service account key JSON file
-cred = credentials.Certificate('path/to/serviceAccountKey.json')
+cred = credentials.Certificate(r'C:\Users\Hp\Downloads\digitalmemory-fbe68-firebase-adminsdk-do0ze-81310fe494.json')
 
 # Initialize the Firebase app
 firebase_admin.initialize_app(cred)
