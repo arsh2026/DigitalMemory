@@ -21,7 +21,7 @@ def login():
     if request.method == 'POST':
         # Handle login here using Firebase Client SDK
         flash('Logged in successfully', 'success')
-        return redirect(url_for('main.index'))
+        return redirect(url_for('main.dashboard'))
     return render_template('login.html')
 
 @auth_bp.route('/verify', methods=['POST'])

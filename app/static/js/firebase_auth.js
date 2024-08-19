@@ -9,7 +9,7 @@ const firebaseConfig = {
     storageBucket: "digitalmemory-fbe68.appspot.com",
     messagingSenderId: "1040826402889",
     appId: "1:1040826402889:web:723a7a175be090f1275798"
-  };
+};
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);

@@ -1,0 +1,28 @@
+<!-- patient_dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-200 flex items-center justify-center min-h-screen">
+    <div class="bg-gray-800 p-8 rounded-lg shadow-lg max-w-3xl w-full">
+        <h2 class="text-2xl font-bold text-white mb-8">Your Family Members</h2>
+        <div class="grid grid-cols-3 gap-4">
+            <!-- Repeat for each family member -->
+            <div class="text-center">
+                <img src="/path/to/family_member_photo.jpg" alt="Family Member" class="rounded-full w-32 h-32 mx-auto mb-2">
+                <button onclick="playVoiceMessage('/path/to/voice_message.mp3')" class="bg-blue-500 text-white py-2 px-4 rounded">Hear Voice</button>
+                <a href="/family_member_memories" class="underline text-white mt-2 block">View Memories</a>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function playVoiceMessage(url) {
+        new Audio(url).play();
+    }
+</script>
+</html>
